@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Outpost_A Debug",
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/Debug/Outpost_A.elf",
+            "request": "launch",    //注意必须使用launch，不能使用attach
+            "preLaunchTask": "Load",   //防止忘了下载程序
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": ["./openocd/openocd.cfg"],
+
+            "device": "STM32F407IGT6",
+            "interface": "swd",
+            "svdFile": "./openocd/stm32f407.svd",
+            "runToEntryPoint": "main",
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4
+            }
+        }
+    ]
+}

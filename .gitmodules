@@ -1,0 +1,3 @@
+[submodule "libs/librm"]
+	path = libs/librm
+	url = git@github.com:XDU-IRobot/librm.git
