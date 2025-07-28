@@ -119,6 +119,8 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
     // 立刻就的说法啊dlkasj
+
+    // 测试一下vscode的git图形化界面
   }
   /* USER CODE END 3 */
 }
